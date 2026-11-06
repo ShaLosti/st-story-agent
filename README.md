@@ -2,6 +2,11 @@
 
 A SillyTavern extension and server plugin that gives the main model a persistent memory entry in the character lorebook. The model writes short `<lore_edits>` instructions at the end of its reply, and a [pi](https://github.com/earendil-works/pi) agent applies them to the **📒 Story State** entry before the next generation. You decide what the entry keeps.
 
+## Why it's helpful
+
+- It saves money on the main model's output. Instead of repeating the inventory or other information every turn, the main model writes only the edits, and the information stays correct across the whole play.
+- A separate model (pi) applies the edits, so the main model can focus on the story.
+
 ## Dependencies
 
 - SillyTavern with the Chat Completion API. Group chats are not supported.
