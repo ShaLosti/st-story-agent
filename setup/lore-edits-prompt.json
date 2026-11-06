@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "type": "full",
+    "data": {
+        "prompts": [
+            {
+                "identifier": "loreAgentEdits",
+                "name": "📝 Lore Edits (agent)",
+                "system_prompt": false,
+                "marker": false,
+                "role": "user",
+                "content": "{{// Lore Agent: the main model changes the <story_state> lorebook entry through <lore_edits>. Needs the Lore Agent extension and server plugin.}}{{trim}}\n\n<lore_edits_rules>\nThe lorebook entry <story_state> is your persistent memory. Keep these sections in it:\n- [Section]: [what it keeps]\nYou can add, remove or change anything in it. A separate agent reads your instructions in <lore_edits> and applies them before the next turn.\nIf anything in it should change, end your reply with plain instructions inside <lore_edits></lore_edits>: which section, and what to add, remove or change. Omit the tags if nothing changed. Never mention them in prose.\nEntries are numbered. To remove or change one, give its section, number and a short name instead of quoting it. Write added entries in full.\nExample:\n<lore_edits>\n[Section]: add \"[full entry]\". Remove 3. [short name].\n</lore_edits>\n</lore_edits_rules>",
+                "injection_position": 1,
+                "injection_depth": 0,
+                "injection_order": 100,
+                "injection_trigger": [],
+                "forbid_overrides": false
+            }
+        ]
+    }
+}

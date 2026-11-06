@@ -1,0 +1,12 @@
+{
+    "display_name": "Lore Agent",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "author": "",
+    "version": "0.1.0",
+    "homePage": "https://github.com/ShaLosti/st-story-agent",
+    "generate_interceptor": "loreAgentInterceptor",
+    "description": "The main model writes <lore_edits> instructions; before the next generation a pi agent applies them to the Story State entry in the character lorebook. Restores the state on swipes, deletes and edits."
+}

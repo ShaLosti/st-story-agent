@@ -1,0 +1,34 @@
+[
+    {
+        "scriptName": "Lore Agent - Hide lore_edits",
+        "findRegex": "/\\s*<lore_edits>[\\s\\S]*?(?:<\\/lore_edits>|$)/gi",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null,
+        "runOnEdit": true,
+        "markdownOnly": true,
+        "promptOnly": false
+    },
+    {
+        "scriptName": "Lore Agent - Strip lore_edits from prompt",
+        "findRegex": "/\\s*<lore_edits>[\\s\\S]*?(?:<\\/lore_edits>|$)/gi",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null,
+        "runOnEdit": true,
+        "markdownOnly": false,
+        "promptOnly": true
+    }
+]
